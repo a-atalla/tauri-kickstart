@@ -12,6 +12,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@tailwindcss/vite": "^4.1.4",
     "@tanstack/router-plugin": "^1.117.2",
     "@tanstack/solid-router": "^1.117.1",
     "@tanstack/solid-router-devtools": "^1.117.1",
@@ -19,6 +20,7 @@
     "@tauri-apps/cli": "^2",
     "@tauri-apps/plugin-opener": "^2.2.6",
     "solid-js": "^1.9.5",
+    "tailwindcss": "^4.1.4",
     "typescript": "~5.6.2",
     "vite": "^6.0.3",
     "vite-plugin-solid": "^2.11.0"
