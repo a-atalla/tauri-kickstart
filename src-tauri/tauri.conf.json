@@ -13,8 +13,9 @@
     "windows": [
       {
         "title": "tauri-kickstart",
-        "width": 800,
-        "height": 600
+        "minWidth": 800,
+        "minHeight": 600,
+        "resizable": true
       }
     ],
     "security": {

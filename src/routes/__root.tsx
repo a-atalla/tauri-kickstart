@@ -1,20 +1,15 @@
-import { createRootRoute, Link, Outlet } from '@tanstack/solid-router'
-import { TanStackRouterDevtools } from '@tanstack/solid-router-devtools'
+import { createRootRoute, Link, Outlet } from "@tanstack/solid-router";
+import { TanStackRouterDevtools } from "@tanstack/solid-router-devtools";
+import Sidebar from "../components/sidebar";
 
 export const Route = createRootRoute({
   component: () => (
     <>
-      <div class="p-2 flex gap-2">
-        <Link to="/" class="[&.active]:font-bold">
-          Home
-        </Link>{' '}
-        <Link to="/about" class="[&.active]:font-bold">
-          About
-        </Link>
-      </div>
-      <hr />
-      <Outlet />
+      <Sidebar />
+      <main class="flex-1 bg-stone-100 h-full overflow-y-auto rounded-sm shadow">
+        <Outlet />
+      </main>
       <TanStackRouterDevtools />
     </>
   ),
-})
+});
